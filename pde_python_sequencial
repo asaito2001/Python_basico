@@ -1,0 +1,86 @@
+!python --version
+
+# Faça um Programa que mostre a mensagem "Alo mundo" na tela.
+
+print("Alo mundo")
+
+# Faça um Programa que peça um número e então mostre a mensagem O número informado foi [número].
+
+numero = input("Digite um numero: ")
+print(f"O numero informado foi {numero}")
+
+# Faça um Programa que peça dois números e imprima a soma.
+
+num1 = int(input("Entre num1: "))
+num2 = int(input("Entre num2: "))
+soma = num1 + num2
+print(f"A soma é: {num1 + num2}")
+
+# Faça um Programa que peça as 4 notas bimestrais e mostre a média
+
+nota1 = float(input("Entre nota1: "))
+nota2 = float(input("Entre nota2: "))
+nota3 = float(input("Entre nota3: "))
+nota4 = float(input("Entre nota4: "))
+media = (nota1 + nota2 + nota3 + nota4) / 4
+print(f"Media : {media}")
+
+# Faça um Programa que converta metros para centímetros.
+
+fator_metros_centimetros = 100
+metros = float(input("Entre com metros: "))
+resultado = metros * fator_metros_centimetros
+print(f"{metros} metros são {resultado} centimetros.")
+
+# Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
+
+pi = 3.14159
+raio = float(input("Entre com o raio de um circulo: "))
+area = pi * (raio**2)
+print(f"Area calculada: {area}")
+
+# Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
+
+lado = float(input("Entre com lado: "))
+area_quadrado = lado ** 2
+dobro_area_quadrado = area_quadrado * 2
+print(f"Area do quadrado {area_quadrado} e o dobro é {dobro_area_quadrado}")
+
+# Faça um Programa que pergunte quanto você ganha por hora e o
+# número de horas trabalhadas no mês. Calcule e mostre o total
+# do seu salário no referido mês.
+
+salario_hora = float(input("Salario hora: "))
+horas_trabalhadas = float(input("Horas trabalhadas: "))
+salario_mensal = salario_hora * horas_trabalhadas
+print(f"Salario mensal: {salario_mensal}")
+
+
+# Faça um Programa que peça a temperatura em graus Fahrenheit, transforme
+# e mostre a temperatura em graus Celsius.
+# C = 5 * ((F-32) / 9).
+
+graus_fahrenheit = float(input("Entre graus Fahrenheit: "))
+graus_celsius = 5 * ((graus_fahrenheit - 32) / 9)
+print(f"Graus fahrenheit {graus_fahrenheit} igual a {graus_celsius} celsius.")
+
+# Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre em graus Fahrenheit.
+
+graus_celsius = float(input("Entre graus Celsius: "))
+graus_fahrenheit = (graus_celsius * (9 / 5)) + 32
+print(f"Graus celsius {graus_celsius} igual a  {graus_fahrenheit} fahrenheit.")
+
+#Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre:
+#     a. O produto do dobro do primeiro com metade do segundo .
+#     b. a soma do triplo do primeiro com o terceiro.
+#     c. o terceiro elevado ao cubo.
+
+int_1 = int(input("Primeiro inteiro: "))
+int_2 = int(input("Segundo inteiro: "))
+real_1 = float(input("Numero real: "))
+result_a = ((int_1 * 2) * (int_2 / 2))
+result_b = ((int_1 * 3) + real_1)
+result_c = real_1 ** 3
+print(f"O produto do dobro do primeiro com metade do segundo {result_a}")
+print(f"A soma do triplo do primeiro com o terceiro {result_b}")
+print(f"O terceiro elevado ao cubo {result_c}")
